@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import reduxThunk from 'redux-thunk';
-import reminders from './reducers';
+import reminders from './reducers/index';
 import './index.css'
  
 const store = createStore(reminders, {}, applyMiddleware(reduxThunk));
